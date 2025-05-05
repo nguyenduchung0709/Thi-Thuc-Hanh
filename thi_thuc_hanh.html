@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý Sách</title>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+<h2>Quản lý Sách</h2>
+
+<h3>Thêm Sách Mới</h3>
+<input id="bookId" placeholder="Mã sách (5 ký tự)" type="text">
+<input id="bookName" placeholder="Tên sách" type="text">
+<input id="bookYear" placeholder="Năm xuất bản" type="number">
+<input id="bookQuantity" placeholder="Số quyển" type="number">
+<button onclick="addNewBook()">Thêm Sách</button>
+
+<h3>Danh sách Sách</h3>
+<table border="1">
+    <tr>
+        <th>Mã sách</th>
+        <th>Tên sách</th>
+        <th>Năm xuất bản</th>
+        <th>Số quyển</th>
+        <th>Tình trạng</th>
+        <th>Mượn sách</th>
+        <th>Thêm sách</th>
+    </tr>
+    <tbody id="bookList"></tbody>
+</table>
+
+<h3>Chức năng</h3>
+<button onclick="showMostBorrowed()">Hiển thị sách được mượn nhiều nhất</button>
+<script src="bai_3.js"></script>
+</body>
+</html>
